@@ -2,11 +2,14 @@
     <head>
         <title>Emscripten Box2D demo</title>
         
-        <script type="text/javascript" src="../../build/Box2D_v2.2.1_min.js"></script>
+        <script type="text/javascript" src="../../build/Box2D_v2.3.1_min.js"></script>
         <script type="text/javascript" src="../../helpers/embox2d-helpers.js"></script>
+        <!-- <script type="module" src="../../helpers/embox2d-helpers.js"></script> -->
         <script type="text/javascript" src="../../helpers/embox2d-html5canvas-debugDraw.js"></script>
         <script type="text/javascript" src="embox2d-html5canvas-testbed.js"></script>
         
+
+        <script type="text/javascript" src="tests/pongGame.js"></script>
         <script type="text/javascript" src="tests/fallingShapes.js"></script>
         <script type="text/javascript" src="tests/pyramid.js"></script>
         <script type="text/javascript" src="tests/car.js"></script>
@@ -68,13 +71,13 @@
                     You need to click on the canvas before using the keyboard.<br>
                     <br>
                     Test: <select id="testSelection" onchange="changeTest();">
+                        <option value="embox2dTest_pongGame">Pong Game</option>
                         <option value="embox2dTest_car">Car (use j/k to move)</option>
                         <option value="embox2dTest_dominos">Dominos</option>
                         <option value="embox2dTest_ropeJoint">Rope joint</option>
                         <option value="embox2dTest_pulleyJoint">Pulley joint</option>
                         <option value="embox2dTest_fallingShapes">Falling shapes</option>
                         <option value="embox2dTest_pyramid">Pyramid</option>
-                        
                         <option value="embox2dTest_balancedMobile">Balanced mobile</option>                        
                     </select>
                 </div>

@@ -302,6 +302,7 @@ function createWorld() {
         Box2D.destroy(world);
         
     world = new Box2D.b2World( new Box2D.b2Vec2(0.0, -10.0) );
+    // world = new Box2D.b2World( new Box2D.b2Vec2(0.0, 0.0) );
     world.SetDebugDraw(myDebugDraw);
     
     mouseJointGroundBody = world.CreateBody( new Box2D.b2BodyDef() );
